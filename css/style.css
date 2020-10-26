@@ -1,0 +1,550 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+
+/* Resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+}
+
+
+button:focus,
+input:focus{
+    outline: none;
+}
+
+
+body {
+
+    font-family: "Arial", "Helvetica", sans-serif;
+}
+
+
+/* Utilities */
+
+.py-1 {
+    padding: 1.5rem;
+}
+
+.py-2 {
+    padding: 2rem;
+}
+
+.py-3 {
+    padding: 3rem;
+}
+
+
+.mg-1 {
+    margin: 1rem;
+}
+
+.main-header {
+    font-size: 3rem;
+}
+
+.main-paragraph {
+    font-size: 2rem;
+}
+
+.container {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    text-align: center;
+}
+
+.button-container {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+}
+
+
+.btn {
+    color: #000;
+    background: #fff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.btn-primary {
+    background: #bd0014;
+    color: #fff;
+}
+
+.btn:hover {
+    background: #eee;
+}
+
+.btn-primary:hover {
+    background: #a90012;
+    color: #fff;
+}
+
+
+.bottom-line {
+    width: 5rem;
+    height: 5px;
+    background: #bd0014;
+    margin: auto;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.bottom-line-white {
+    width: 5rem;
+    height: 5px;
+    background: #fff;
+    margin: auto;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+
+}
+
+.long {
+    width: 10rem;
+}
+
+
+/* Navbar */
+
+#nav {
+    background: #bd0014;
+    color: #fff;
+    padding: 1rem;
+    width: 100%;
+    opacity: 1;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#nav-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around
+}
+
+#nav #nav-items header h2 {
+    font-family: 'Shrikhand', cursive;
+
+}
+
+#items ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#items ul li {
+    margin-right: 0.7rem;
+}
+
+#items ul li a {
+    font-size: 1rem;
+}
+
+#mobile-menu-items {
+    background: #bd0014;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    display: none;
+
+}
+
+.menu-items-display {
+    display: block !important;
+    bottom: 0 !important;
+
+}
+
+#mobile-menu-items ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: auto;
+}
+
+#mobile-menu-items ul li {
+    margin-bottom: 1.2rem;
+}
+
+#mobile-menu-items ul li .btn {
+    padding: 0.25rem 4rem;
+}
+
+#menu {
+
+    display: none;
+    border: 1px solid #eee;
+    border-radius: 2px;
+    -webkit-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+
+#menu .menu-line {
+    width: 2rem;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    -webkit-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s;
+}
+
+#menu:hover,
+#menu:focus {
+    background: #eee;
+
+}
+
+#menu:hover .menu-line,
+#menu:focus .menu-line {
+    background: #333;
+}
+
+
+/* Showcase */
+
+#showcase {
+    background: #333;
+    position: relative;
+    height: 100vh;
+}
+
+#showcase::before {
+    content: '';
+    background: url('../img/showcase.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    z-index: 0;
+}
+
+
+
+.showcase-div {
+    margin: auto;
+}
+
+.showcase-content {
+    margin-top: 15rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.showcase-content > * {
+    margin-bottom: 2rem;
+}
+
+.showcase-content p {
+    padding: 1rem;
+}
+
+
+/* Story */
+
+#story {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #9e0011;
+    color: white;
+
+}
+
+#story p {
+    margin-bottom: 1rem;
+}
+
+
+/* Classes */
+
+#classes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#classes a {
+    width: 20%;
+    -ms-grid-column-align: center;
+    justify-self: center;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.classes-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.class-item {
+    border-radius: 20px;
+    background: #333;
+    position: relative;
+}
+
+.class-item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    border-radius: 20px;
+}
+
+
+#item-1:before {
+    background: url('../img/chinese.jpg') no-repeat center center/cover;
+}
+
+#item-2:before {
+    background: url('../img/indian.jpg') no-repeat center center/cover;
+}
+
+#item-3:before {
+    background: url('../img/arabian.jpg') no-repeat center center/cover;
+}
+
+#item-4:before {
+    background: url('../img/all.jpg') no-repeat center center/cover;
+}
+
+.item-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+.item-content h3 {
+    margin-bottom: 0.25rem;
+}
+
+
+/* Testimonials */
+
+#testimonials {
+    background: #9e0011;
+    color: #fff;
+    margin: 3rem 0rem;
+    text-align: center;
+}
+
+#testimonials-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.img-wrapper {
+    width: 110px;
+    height: 85px;
+    border-radius: 50%;
+    background: #333;
+    margin-right: 1rem;
+}
+
+.img-wrapper img {
+    border-radius: 50%;
+    width: 4vw;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.testimonials-text p {
+    margin-bottom: 0.5rem;
+}
+
+.testimonials-text small {
+    margin-left: 7rem;
+}
+
+.testimonial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.testimonial {
+    background: #f8f8f8;
+    color: #222;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+
+/* Contact */
+
+#contact {
+    text-align: center;
+}
+
+.fields {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1.2rem;
+    grid-template-areas:
+        'name email'
+        'phone phone'
+        'subject subject'
+        'message message'
+        'button button';
+    grid-gap: 1.2rem;
+    margin-bottom: 1rem;
+
+}
+
+
+#contact-form input,
+#contact-form textarea {
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+#contact-message {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: message;
+}
+
+#name {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: name;
+}
+
+#email {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: email;
+}
+
+#phone {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: phone;
+}
+
+#subject {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: subject;
+}
+
+
+/* Footer */
+
+footer {
+    background: #9e0011;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* Widescreens */
+
+@media (min-width: 1900px) {
+    .btn {
+        padding: 0.75rem;
+        font-size: 1.2rem;
+    }
+    
+    #testimonials-wrapper {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}

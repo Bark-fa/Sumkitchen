@@ -1,0 +1,94 @@
+#nav-items {
+
+    -webkit-box-orient: vertical;
+
+    -webkit-box-direction: normal;
+
+    -webkit-flex-direction: column;
+
+        -ms-flex-direction: column;
+
+            flex-direction: column;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+
+}
+
+#items ul {
+    display: none;
+}
+
+#menu {
+
+    display: block;
+
+}
+
+
+#showcase {
+
+    height: 100%;
+}
+
+
+.showcase-content {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.classes-grid {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.class-item {
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+}
+
+#classes a {
+    width: 65%;
+    margin-top: 1rem;
+}
+
+#testimonials-wrapper {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+
+
+}
+
+.img-wrapper {
+    width: 20%;
+    height: 50px;
+    margin-right: 0;
+    margin-bottom: 1.1rem;
+}
+
+.testimonial {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+}
+
+.testimonials-text small {
+    margin-left: 5rem;
+}
+
+.fields {
+        grid-template-areas:
+        'name'
+        'email'
+        'phone'
+        'subject'
+        'message'
+        'button';
+}
